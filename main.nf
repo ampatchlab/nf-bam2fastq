@@ -54,6 +54,12 @@ log.info("Output directory: ${params.outdir}")
 log.info("Format string: \"${params.format_string}\"")
 log.info("Compression level: ${params.compression_level}")
 
+
+
+/*
+ * Log advanced options
+ */
+
 // Reports options
 log.info("Execution report: ${params.execution_report}")
 log.info("Trace report: ${params.trace_report}")
@@ -205,11 +211,42 @@ def usage() {
 
     Standard options:
 
+        --advanced
+            Show advanced usage and exit
+
         --help
             Show this message and exit
 
         --version
             Show the pipeline version and exit
+    """.stripIndent()
+}
+
+def advanced() {
+
+    log.info"""
+    Report options:
+
+        --execution_report STR
+            Name of the Nextflow execution report to generate [Default: ${defaults.execution_report}]
+
+        --trace_report STR
+            Name of the Nextflow trace report to generate [Default: ${defaults.trace_report}]
+
+        --timeline_report STR
+            Name of the Nextflow timeline report to generate [Default: ${defaults.timeline_report}]
+
+        --flowchart STR
+            Name of the Nextflow flowchart to generate [Default: ${defaults.flowchart}]
+
+
+    AWS Batch options:
+
+        --aws_queue STR
+            AWS Batch JobQueue definition [Default: ${defaults.aws_queue}]
+
+        --aws_region STR
+            AWS Region definition [Default: ${defaults.aws_region}]
     """.stripIndent()
 }
 
@@ -221,6 +258,11 @@ def die() {
 def check_params() {
 
     // Standard options
+
+    if (params.advanced) {
+        advanced()
+        exit 0
+    }
 
     if (params.help) {
         usage()

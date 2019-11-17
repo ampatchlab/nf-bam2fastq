@@ -56,9 +56,39 @@ Output options:
 
 Standard options:
 
+    --advanced
+        Show advanced usage and exit
+
     --help
         Show this message and exit
 
     --version
         Show the pipeline version and exit
+```
+
+## Advanced options
+
+```
+Report options:
+
+    --execution_report STR
+        Name of the Nextflow execution report to generate [Default: ./reports/execution_report.html]
+
+    --trace_report STR
+        Name of the Nextflow trace report to generate [Default: ./reports/trace_report.txt]
+
+    --timeline_report STR
+        Name of the Nextflow timeline report to generate [Default: ./reports/timeline_report.html]
+
+    --flowchart STR
+        Name of the Nextflow flowchart to generate [Default: ./reports/flowchart.png]
+
+
+AWS Batch options:
+
+    --aws_queue STR
+        AWS Batch JobQueue definition [Default: false]
+
+    --aws_region STR
+        AWS Region definition [Default: false]
 ```
