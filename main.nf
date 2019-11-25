@@ -110,7 +110,7 @@ process fastq {
     path "*.fastq.gz"
 
     """
-    samtools collate -Ou "${bam}" | samtools fastq \\
+    samtools collate -Ou "${bam}" "${bam.getBaseName()}" | samtools fastq \\
         -c "${params.compression_level}" \\
         -n \\
         -F 256 -F 512 -F 2048 \\
