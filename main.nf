@@ -117,8 +117,7 @@ process fastq {
         -0 "${bam.getBaseName()}.0.fastq.gz" \\
         -1 "${bam.getBaseName()}.1.fastq.gz" \\
         -2 "${bam.getBaseName()}.2.fastq.gz" \\
-        -s "${bam.getBaseName()}.s.fastq.gz" \\
-        -
+        -s "${bam.getBaseName()}.s.fastq.gz"
     """
 }
 
