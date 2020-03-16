@@ -1,7 +1,7 @@
 # ampatchlab/nf-bam2fastq
 
 [![Build Status](https://codebuild.ap-southeast-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSDZhcmZsSytNYk9oR3paUmEzenAxKzgwZ3dRa0c1eWROVDVlZFdLcTQ5SnNEeWl6b0xoTlNCN0RQMDlkVkFsd2dxejFnbW1VS3ZTSlBVK3dteUw2V25VPSIsIml2UGFyYW1ldGVyU3BlYyI6InVTNCtCYUFibCtRTU94Q2UiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)](https://ap-southeast-2.console.aws.amazon.com/codesuite/codebuild/projects/nf-bam2fastq/history)
-[![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A519.10.0-brightgreen.svg)](https://www.nextflow.io/)
+[![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A520.01.0-brightgreen.svg)](https://www.nextflow.io/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Simple BAM to FASTQ Nextflow pipeline
